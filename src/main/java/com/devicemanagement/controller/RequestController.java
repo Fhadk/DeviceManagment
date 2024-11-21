@@ -34,4 +34,16 @@ public class RequestController {
                                                 @NotNull @NotEmpty String identifier) {
         return deviceService.getDeviceByIdentifier(identifier);
     }
+
+    @GetMapping(value = "/getalldevices")
+    public List<Device> getAllDevices() {
+        return deviceService.getAllDevices();
+    }
+
+    @DeleteMapping(value = "/deledevice/{identifier}")
+    public HttpStatus deleteDevice(@PathVariable(value = "identifier", required = true)
+                                         @NotNull @NotEmpty String identifier) {
+        return deviceService.deleteDevice(identifier);
+    }
+
 }

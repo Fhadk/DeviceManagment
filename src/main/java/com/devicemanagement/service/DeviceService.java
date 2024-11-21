@@ -53,4 +53,30 @@ public class DeviceService {
 	}
 
 
+	/**
+	 *
+	 * @param brand
+	 * @return List<Device> Branc
+	 */
+	public List<Device> getDeviceByBrand(String brand){
+		return devices.stream()
+				.filter(obj -> obj.getBrand() != null && obj.getBrand().contains(brand))
+				.collect(Collectors.toList());
+	}
+
+
+	/**
+	 *
+	 * @param identifier
+	 * @return HttpStatus
+	 */
+	public HttpStatus deleteDevice(String identifier) {
+		List<Device> updatedList = devices.stream()
+				.filter(obj -> (!obj.getBrand().equals(identifier)) ||
+						(!obj.getName().equals(identifier)))
+				.collect(Collectors.toList());
+
+		return updatedList.size() < devices.size() ? HttpStatus.NO_CONTENT : HttpStatus.NOT_FOUND;
+	}
+
 }
