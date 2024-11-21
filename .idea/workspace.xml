@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="325c3ce2-d85d-4ee6-8fae-617c4b3c7ed9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeviceManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DeviceManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,6 +157,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeviceServiceTest.testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DeviceManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devicemanagement.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devicemanagement.service" />
+      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.service.DeviceServiceTest" />
+      <option name="METHOD_NAME" value="testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,6 +186,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeviceServiceTest.testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated" />
         <item itemvalue="JUnit.DeviceServiceTest.addDevice" />
         <item itemvalue="JUnit.DeviceServiceTest" />
         <item itemvalue="JUnit.DeviceServiceTest.getBookByAuthor" />
@@ -194,11 +216,25 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BookManagement$BookServiceTest_readAllData.ic" NAME="BookServiceTest.readAllData Coverage Results" MODIFIED="1669285376277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bookmanagement.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DeviceManagement$BookManagementApp.ic" NAME="BookManagementApp Coverage Results" MODIFIED="1732054943436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DeviceManagement$BookManagementApp.ic" NAME="BookManagementApp Coverage Results" MODIFIED="1732194019778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated.ic" NAME="DeviceServiceTest.testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated Coverage Results" MODIFIED="1732194010015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/BookManagement$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1669292022875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bookmanagement.service.*</FILTER>
     </SUITE>
