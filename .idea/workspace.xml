@@ -10,9 +10,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

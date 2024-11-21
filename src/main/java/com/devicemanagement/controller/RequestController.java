@@ -30,7 +30,7 @@ public class RequestController {
     }
 
     @GetMapping(value = "/getdeviceby/{identifier}")
-    public List<Device> getDeviceByIdentifier(@PathVariable(value = "identifier", required = true)
+    public List<Object> getDeviceByIdentifier(@PathVariable(value = "identifier", required = true)
                                                 @NotNull @NotEmpty String identifier) {
         return deviceService.getDeviceByIdentifier(identifier);
     }
@@ -40,10 +40,26 @@ public class RequestController {
         return deviceService.getAllDevices();
     }
 
+    @GetMapping(value = "/getdevicebybrand/{brand}")
+    public List<Object> getDeviceByBrand(@PathVariable(value = "brand", required = true)
+                                              @NotNull @NotEmpty String brand) {
+        return deviceService.getDeviceByBrand(brand);
+    }
+
     @DeleteMapping(value = "/deledevice/{identifier}")
     public HttpStatus deleteDevice(@PathVariable(value = "identifier", required = true)
                                          @NotNull @NotEmpty String identifier) {
         return deviceService.deleteDevice(identifier);
+    }
+
+    @PatchMapping("/partialupdatedevice")
+    public List<Device> partialUpdateDevice(@RequestBody @NotNull @NotEmpty Device device) {
+        return deviceService.partialUpdateDevice(device);
+    }
+
+    @PutMapping("/fullupdatedevice")
+    public List<Device> fullUpdateDevice(@RequestBody @NotNull @NotEmpty Device device) {
+        return deviceService.fullUpdateDevice(device);
     }
 
 }

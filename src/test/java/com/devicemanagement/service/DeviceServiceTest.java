@@ -32,8 +32,8 @@ public class DeviceServiceTest {
 
     @Before
     public void setUp() throws Exception {
-        device1 = new Device("Z Flip","Samsung", LocalDateTime.now());
-        device2 = new Device("Iphone 14","Apple", LocalDateTime.now());
+        device1 = new Device("123-2323-21323","Z Flip","Samsung");
+        device2 = new Device("123-2323-213232323a","Iphone 14","Apple");
     }
 
     @Test

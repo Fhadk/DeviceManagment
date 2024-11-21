@@ -15,9 +15,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Device implements Serializable {
-//    @NotNull
-//    private String id = UUID.randomUUID().toString();;
+    @NotNull
+    private String id = UUID.randomUUID().toString();;
     private String name;
     private String brand;
-    private LocalDateTime creationTime;
+    private final LocalDateTime creationTime = LocalDateTime.now();
 }
