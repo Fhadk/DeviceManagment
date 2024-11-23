@@ -1,0 +1,4 @@
+com\devicemanagement\model\Device.class
+com\devicemanagement\DeviceManagementApplication.class
+com\devicemanagement\service\DeviceService.class
+com\devicemanagement\controller\RequestController.class

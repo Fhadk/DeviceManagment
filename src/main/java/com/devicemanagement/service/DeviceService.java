@@ -35,7 +35,7 @@ public class DeviceService {
 	 */
 	public List<Device> getAllDevices(){
 		if(devices.isEmpty()){
-			Optional.empty();
+			return Collections.emptyList();
 		}
 		return devices;
 	}

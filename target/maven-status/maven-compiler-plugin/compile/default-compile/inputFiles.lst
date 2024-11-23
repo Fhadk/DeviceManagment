@@ -1,10 +1,4 @@
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\controller\RequestController.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\filter\JwtRequestFilter.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\model\AuthenticationRequest.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\Covid19Application.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\service\Covid19Service.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\model\AuthenticationResponse.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\model\Covid19Data.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\config\WebSecurityConfig.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\service\MyUserDetailsService.java
-C:\allworkspaces\workspace_jazz\EnterpriseSolutions\Covid19\src\main\java\com\Covid19\util\JwtUtil.java
+C:\D\workspace\DeviceManagement\src\main\java\com\devicemanagement\DeviceManagementApplication.java
+C:\D\workspace\DeviceManagement\src\main\java\com\devicemanagement\service\DeviceService.java
+C:\D\workspace\DeviceManagement\src\main\java\com\devicemanagement\model\Device.java
+C:\D\workspace\DeviceManagement\src\main\java\com\devicemanagement\controller\RequestController.java
