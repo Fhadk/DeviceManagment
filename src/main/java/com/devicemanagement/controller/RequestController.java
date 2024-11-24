@@ -29,9 +29,66 @@ public class RequestController {
         return new ResponseEntity<Object>(deviceService.addDevice(device));
     }
 
+    /**
+     *
+     * @param identifier
+     * @return List<Object>
+     */
     @GetMapping(value = "/getdeviceby/{identifier}")
-    public List<Device> getDeviceByIdentifier(@PathVariable(value = "identifier", required = true)
+    public List<Object> getDeviceByIdentifier(@PathVariable(value = "identifier", required = true)
                                                 @NotNull @NotEmpty String identifier) {
         return deviceService.getDeviceByIdentifier(identifier);
     }
+
+    /**
+     *
+     * @return List<Device>
+     */
+    @GetMapping(value = "/getalldevices")
+    public List<Device> getAllDevices() {
+        return deviceService.getAllDevices();
+    }
+
+    /**
+     *
+     * @param brand
+     * @return List<Object>
+     */
+    @GetMapping(value = "/getdevicebybrand/{brand}")
+    public List<Object> getDeviceByBrand(@PathVariable(value = "brand", required = true)
+                                              @NotNull @NotEmpty String brand) {
+        return deviceService.getDeviceByBrand(brand);
+    }
+
+    /**
+     *
+     * @param identifier
+     * @return HttpStatus
+     */
+    @DeleteMapping(value = "/deletedevice/{identifier}")
+    public HttpStatus deleteDevice(@PathVariable(value = "identifier", required = true)
+                                         @NotNull @NotEmpty String identifier) {
+        return deviceService.deleteDevice(identifier);
+    }
+
+    /**
+     *
+     * @param device
+     * @return List<Device>
+     */
+    @PatchMapping("/partialupdatedevice")
+    public List<Device> partialUpdateDevice(@RequestBody @NotNull @NotEmpty Device device) {
+        return deviceService.partialUpdateDevice(device);
+    }
+
+    /**
+     *
+     * @param device
+     * @return List<Device>
+     */
+    @PutMapping("/fullupdatedevice")
+    public List<Device> fullUpdateDevice(@RequestBody @NotNull @NotEmpty Device device) {
+        return deviceService.fullUpdateDevice(device);
+    }
+
 }
