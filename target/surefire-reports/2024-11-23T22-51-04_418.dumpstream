@@ -1,6 +1,0 @@
-# Created at 2024-11-23T22:51:05.067
-Nov 23, 2024 10:51:05 PM org.junit.platform.launcher.core.DefaultLauncher validateEngineIds
-
-# Created at 2024-11-23T22:51:05.067
-WARNING: Third-party TestEngine implementations are forbidden to use the reserved 'junit-' prefix for their ID: 'junit-platform-suite'
-
