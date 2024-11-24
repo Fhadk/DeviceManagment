@@ -65,7 +65,7 @@ public class RequestController {
      * @param identifier
      * @return HttpStatus
      */
-    @DeleteMapping(value = "/deledevice/{identifier}")
+    @DeleteMapping(value = "/deletedevice/{identifier}")
     public HttpStatus deleteDevice(@PathVariable(value = "identifier", required = true)
                                          @NotNull @NotEmpty String identifier) {
         return deviceService.deleteDevice(identifier);

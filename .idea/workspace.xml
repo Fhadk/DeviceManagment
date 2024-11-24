@@ -10,25 +10,26 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_api_1_5_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_commons_1_9_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_engine_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/devicemanagement/controller/RequestControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeviceManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DeviceManagement.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/controller/RequestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/model/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devicemanagement/service/DeviceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devicemanagement/controller/RequestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devicemanagement/controller/RequestControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devicemanagement/service/DeviceServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Covid19-0.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Covid19-0.1.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/controller/RequestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/model/Device.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devicemanagement/service/DeviceService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/controller/RequestControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/controller/RequestControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/devicemanagement/service/DeviceServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeviceServiceTest.testGetAllDevices_WhenDevices_ShouldDevicesList">
+  <component name="RunManager" selected="JUnit.RequestControllerTest.testPartialUpdateDevice">
     <configuration name="BookManagementApp" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -112,71 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeviceServiceTest.testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DeviceManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devicemanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devicemanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.service.DeviceServiceTest" />
-      <option name="METHOD_NAME" value="testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviceServiceTest.testAddDevice_WhenDeviceIsPresent_ShouldReturnConflict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DeviceManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devicemanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devicemanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.service.DeviceServiceTest" />
-      <option name="METHOD_NAME" value="testAddDevice_WhenDeviceIsPresent_ShouldReturnConflict" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviceServiceTest.testGetAllDevices_WhenDevices_ShouldDevicesList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DeviceManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devicemanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devicemanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.service.DeviceServiceTest" />
-      <option name="METHOD_NAME" value="testGetAllDevices_WhenDevices_ShouldDevicesList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviceServiceTest.testGetAllDevices_WhenNoDevices_ShouldReturnOptionalEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DeviceManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devicemanagement.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devicemanagement.service" />
-      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.service.DeviceServiceTest" />
-      <option name="METHOD_NAME" value="testGetAllDevices_WhenNoDevices_ShouldReturnOptionalEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RequestControllerTest.addDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RequestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DeviceManagement" />
       <extension name="coverage">
         <pattern>
@@ -186,7 +123,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.devicemanagement.controller" />
       <option name="MAIN_CLASS_NAME" value="com.devicemanagement.controller.RequestControllerTest" />
-      <option name="METHOD_NAME" value="addDevice" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestControllerTest.testAddDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DeviceManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devicemanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devicemanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.controller.RequestControllerTest" />
+      <option name="METHOD_NAME" value="testAddDevice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestControllerTest.testFullUpdateDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DeviceManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devicemanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devicemanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.controller.RequestControllerTest" />
+      <option name="METHOD_NAME" value="testFullUpdateDevice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestControllerTest.testFullUpdateDevices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DeviceManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devicemanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devicemanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.controller.RequestControllerTest" />
+      <option name="METHOD_NAME" value="testFullUpdateDevices" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestControllerTest.testPartialUpdateDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DeviceManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devicemanagement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devicemanagement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.devicemanagement.controller.RequestControllerTest" />
+      <option name="METHOD_NAME" value="testPartialUpdateDevice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -205,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DeviceServiceTest.testGetAllDevices_WhenDevices_ShouldDevicesList" />
-        <item itemvalue="JUnit.DeviceServiceTest.testGetAllDevices_WhenNoDevices_ShouldReturnOptionalEmpty" />
-        <item itemvalue="JUnit.DeviceServiceTest.testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated" />
-        <item itemvalue="JUnit.DeviceServiceTest.testAddDevice_WhenDeviceIsPresent_ShouldReturnConflict" />
-        <item itemvalue="JUnit.RequestControllerTest.addDevice" />
+        <item itemvalue="JUnit.RequestControllerTest.testPartialUpdateDevice" />
+        <item itemvalue="JUnit.RequestControllerTest.testFullUpdateDevice" />
+        <item itemvalue="JUnit.RequestControllerTest.testFullUpdateDevices" />
+        <item itemvalue="JUnit.RequestControllerTest.testAddDevice" />
+        <item itemvalue="JUnit.RequestControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -235,44 +235,72 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/devicemanagement/controller/RequestControllerTest.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_whenDeviceIsAlreadyPresent_shouldReturnConflict.ic" NAME="DeviceServiceTest.testAddDevice_whenDeviceIsAlreadyPresent_shouldReturnConflict Coverage Results" MODIFIED="1732375234184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.devicemanagement.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest.ic" NAME="DeviceServiceTest Coverage Results" MODIFIED="1732375607355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.devicemanagement.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_addDevice.ic" NAME="RequestControllerTest.addDevice Coverage Results" MODIFIED="1732378045756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_addDevice.ic" NAME="RequestControllerTest.addDevice Coverage Results" MODIFIED="1732404522850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.devicemanagement.controller.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/BookManagement$BookServiceTest_readAllData.ic" NAME="BookServiceTest.readAllData Coverage Results" MODIFIED="1669285376277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bookmanagement.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DeviceManagement$BookManagementApp.ic" NAME="BookManagementApp Coverage Results" MODIFIED="1732194019778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testGetDeviceByIdentifier.ic" NAME="RequestControllerTest.testGetDeviceByIdentifier Coverage Results" MODIFIED="1732402784750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest.ic" NAME="RequestControllerTest Coverage Results" MODIFIED="1732405296158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testFullUpdateDevice.ic" NAME="RequestControllerTest.testFullUpdateDevice Coverage Results" MODIFIED="1732406233565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated.ic" NAME="DeviceServiceTest.testAddDevice_whenDeviceIsNotPresent_shouldReturnCreated Coverage Results" MODIFIED="1732194010015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.devicemanagement.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated.ic" NAME="DeviceServiceTest.testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated Coverage Results" MODIFIED="1732393062275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testGetDeviceByBrand.ic" NAME="RequestControllerTest.testGetDeviceByBrand Coverage Results" MODIFIED="1732403867505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testGetAllDevices.ic" NAME="RequestControllerTest.testGetAllDevices Coverage Results" MODIFIED="1732404147924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest.ic" NAME="DeviceServiceTest Coverage Results" MODIFIED="1732402343221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.devicemanagement.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testAddDevice_ShouldReturnCreated.ic" NAME="RequestControllerTest.testAddDevice_ShouldReturnCreated Coverage Results" MODIFIED="1732376523341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.devicemanagement.controller.*</FILTER>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated.ic" NAME="DeviceServiceTest.testAddDevice_WhenDeviceIsNotPresent_ShouldReturnCreated Coverage Results" MODIFIED="1732402242484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/BookManagement$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1669292022875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bookmanagement.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testGetAllDevices_WhenDevices_ShouldDevicesList.ic" NAME="DeviceServiceTest.testGetAllDevices_WhenDevices_ShouldDevicesList Coverage Results" MODIFIED="1732394520034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_whenDeviceIsAlreadyPresent_shouldReturnConflict.ic" NAME="DeviceServiceTest.testAddDevice_whenDeviceIsAlreadyPresent_shouldReturnConflict Coverage Results" MODIFIED="1732375234184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testPartialUpdateDevice.ic" NAME="RequestControllerTest.testPartialUpdateDevice Coverage Results" MODIFIED="1732406362744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testGetAllDevices_WhenNoDevice_ShouldReturnEmptyList.ic" NAME="DeviceServiceTest.testGetAllDevices_WhenNoDevice_ShouldReturnEmptyList Coverage Results" MODIFIED="1732402325971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testAddDevice.ic" NAME="RequestControllerTest.testAddDevice Coverage Results" MODIFIED="1732405569044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testPartialUpdateDevice_UpdatesDevice.ic" NAME="DeviceServiceTest.testPartialUpdateDevice_UpdatesDevice Coverage Results" MODIFIED="1732402429711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testFullUpdateDevices.ic" NAME="RequestControllerTest.testFullUpdateDevices Coverage Results" MODIFIED="1732405847133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testAddDevice_ShouldReturnCreated.ic" NAME="RequestControllerTest.testAddDevice_ShouldReturnCreated Coverage Results" MODIFIED="1732376523341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testDeleteDevice.ic" NAME="RequestControllerTest.testDeleteDevice Coverage Results" MODIFIED="1732405258386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.controller.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testAddDevice_WhenDeviceIsPresent_ShouldReturnConflict.ic" NAME="DeviceServiceTest.testAddDevice_WhenDeviceIsPresent_ShouldReturnConflict Coverage Results" MODIFIED="1732392544553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.devicemanagement.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DeviceManagement$DeviceServiceTest_testFullUpdateDevice_UpdatesDevice.ic" NAME="DeviceServiceTest.testFullUpdateDevice_UpdatesDevice Coverage Results" MODIFIED="1732402175642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.devicemanagement.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DeviceManagement$RequestControllerTest_testAddDevice_ShouldReturnConflict.ic" NAME="RequestControllerTest.testAddDevice_ShouldReturnConflict Coverage Results" MODIFIED="1732376609877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

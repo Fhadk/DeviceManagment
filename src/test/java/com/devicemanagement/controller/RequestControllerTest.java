@@ -6,17 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
 import com.devicemanagement.model.Device;
 import com.devicemanagement.service.DeviceService;
-import org.junit.jupiter.api.BeforeEach;
+
+import java.util.List;
 
 @WebMvcTest(RequestController.class)
 class RequestControllerTest {
@@ -27,48 +31,77 @@ class RequestControllerTest {
     @MockBean
     private DeviceService deviceService; // Mock the service layer
 
-    Device device;
-    Device device2;
+    @Test
+    void testGetDeviceByIdentifier() throws Exception {
+        String identifier = "Apple";
+        List<Object> mockDevices = List.of("Device1", "Device2");
+        when(deviceService.getDeviceByIdentifier(identifier)).thenReturn(mockDevices);
 
-
-    @BeforeEach
-    void setUp() {
-        device = new Device("Type A", "Active");
-//        device2 = new Device("Device b", "Type B", "Deleted");
+        mockMvc.perform(get("/api/getdeviceby/{identifier}", identifier))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2))
+                .andExpect(jsonPath("$[0]").value("Device1"))
+                .andExpect(jsonPath("$[1]").value("Device2"));
     }
 
     @Test
-    void addDevice() throws Exception {
-        when(deviceService.addDevice(device)).thenReturn(HttpStatus.CREATED);
+    void testGetDeviceByBrand() throws Exception {
+        String brand = "Samsung";
+        List<Object> mockDevices = List.of("Device1", "Device2");
+        when(deviceService.getDeviceByBrand(brand)).thenReturn(mockDevices);
 
-        // Act & Assert
-        mockMvc.perform(post("/api/addDevice")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"name\":\"Device A\", \"brand\":\"Type A\"}"))
-                .andExpect(status().isCreated());
+        mockMvc.perform(get("/api/getdevicebybrand/{brand}", brand))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2))
+                .andExpect(jsonPath("$[0]").value("Device1"))
+                .andExpect(jsonPath("$[1]").value("Device2"));
+
     }
 
     @Test
-    void getDeviceByIdentifier() {
+    void testGetAllDevices() throws Exception {
+        List<Device> mockDevices = List.of(new Device("Iphone 11","Apple"), new Device("Iphone 14","Apple"));
+        when(deviceService.getAllDevices()).thenReturn(mockDevices);
+
+        mockMvc.perform(get("/api/getalldevices"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2))
+                .andExpect(jsonPath("$[0].name").value("Iphone 11"))
+                .andExpect(jsonPath("$[1].name").value("Iphone 14"));
+
     }
 
     @Test
-    void getAllDevices() {
+    void testDeleteDevice() throws Exception {
+        String identifier = "Apple";
+        when(deviceService.deleteDevice(identifier)).thenReturn(HttpStatus.NO_CONTENT);
+
+        mockMvc.perform(delete("/api/deletedevice/{identifier}", identifier))
+                .andExpect(status().isOk());
     }
 
     @Test
-    void getDeviceByBrand() {
+    void testPartialUpdateDevice() throws Exception {
+        Device device  = new Device("Iphone 11", "Apple");
+        List<Device> updatedDevices = List.of(device);
+        when(deviceService.partialUpdateDevice(device)).thenReturn(updatedDevices);
+
+        mockMvc.perform(patch("/api/partialupdatedevice")
+                        .contentType("application/json")
+                        .content("{\"name\": \"Iphone13\",\"brand\": \"Apple\"}"))
+                .andExpect(status().isOk());
     }
 
     @Test
-    void deleteDevice() {
+    void testFullUpdateDevice() throws Exception {
+        Device device  = new Device("Iphone 13", "Apple");
+        List<Device> updatedDevices = List.of(device);
+        when(deviceService.fullUpdateDevice(device)).thenReturn(updatedDevices);
+
+        mockMvc.perform(put("/api/fullupdatedevice")
+                        .contentType("application/json")
+                        .content("{\"name\": \"Iphone 14\",\"brand\": \"Apple\"}"))
+                .andExpect(status().isOk());
     }
 
-    @Test
-    void partialUpdateDevice() {
-    }
-
-    @Test
-    void fullUpdateDevice() {
-    }
 }

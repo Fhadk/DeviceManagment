@@ -1,6 +1,9 @@
 package com.devicemanagement.service;
 
 import com.devicemanagement.model.Device;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
